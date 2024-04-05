@@ -1,0 +1,329 @@
+:root {
+    ---main-color: #291770;
+    ---main-color-alt: #583FBC;
+    ---main-transition: 0.5s;
+}
+h1,
+h2,
+h3 {
+    color: var(---main-color);
+    font-style: italic;
+    font-family: "ABeeZee", Arial, sans-serif;
+}
+/* Start About */
+.about {
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:992px) {
+    .about .container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+.about .image {
+    position: relative;
+}
+.about .image .pattern {
+    width: 100px;
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+    z-index: 0;
+}
+.about .image .doc {
+    padding-top: 120px;
+    margin-left: 30px;
+}
+.about .image img {
+    position: relative;
+    z-index: 22;
+    width: 100%;
+    width: 240px;
+}
+@media (max-width:545px) {
+    .about .image .pattern {
+        width: 70px;
+        bottom: 20px;
+        left: 150px;
+        z-index: 0;
+    }
+    .about .image .doc {
+        padding-top: 120px;
+        margin-left: 30px;
+    }
+    .about .image img {
+        position: relative;
+        z-index: 22;
+        width: 100%;
+        width: 170px;
+    }
+}
+@media (max-width:400px) {
+    .about .image .pattern {
+        width: 70px;
+        bottom: 20px;
+        left: 110px;
+        z-index: 0;
+    }
+    .about .image .doc {
+        padding-top: 120px;
+        margin-left: 30px;
+    }
+    .about .image img {
+        position: relative;
+        z-index: 22;
+        width: 100%;
+        width: 130px;
+    }
+}
+.about .text {
+    flex-basis: 45%;
+}
+.about .text .main-heading h1 {
+    font-size: 43px !important;
+}
+.about .text p {
+    line-height: 1.9;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.about .text button {
+    color: white;
+    padding: 15px 35px;
+    border-radius: 16px;
+    border: none;
+    transition: var(---main-transition);
+    background: linear-gradient( #1b0e52 , #1b0e52 ) no-repeat;
+    background-size: 0%;
+}
+.about .text button:hover {
+    background-size: 100%;
+}
+/* End About */
+/* Start Priority */
+.priority {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.priority .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+@media (max-width:992px) {
+    .priority .container {
+        flex-direction: column;
+        gap: 80px;
+        text-align: center;
+    }
+}
+.priority .image {
+    position: relative;
+}
+.priority .image img {
+    position: relative;
+    z-index: 22;
+    width: 100%;
+}
+.priority .image::after {
+    position: absolute;
+    content: "";
+    height: calc(50% + 100px);
+    width: 80%;
+    background-color: #dbeffa;
+    top: 20%;
+    transform: translateY(-50%);
+    right: 35%;
+    z-index: 0;
+    border-radius: 20px;
+}
+.priority .text {
+    flex-basis: 45%;
+}
+.priority .text .main-heading h1 {
+    font-size: 43px !important;
+}
+.priority .text p {
+    line-height: 1.9;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.priority ul li {
+    color: var(---main-color);
+    line-height: 3;
+    font-weight: 500;
+    font-size: 17px;
+}
+.priority ul li i {
+    padding-right: 10px;
+    font-size: 18px;
+}
+.priority .text button {
+    color: white;
+    padding: 15px 35px;
+    border-radius: 16px;
+    border: none;
+    transition: var(---main-transition);
+    background: linear-gradient( #1b0e52 , #1b0e52 ) no-repeat;
+    background-size: 0%;
+}
+.priority .text button:hover {
+    background-size: 100%;
+}
+/* End Priority */
+/* Start Safety */
+.safety {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #dbdefa;
+    height: 80vh;
+    width: 95%;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+}
+.safety .container {
+    text-align: center;
+}
+.safety .main-heading p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.safety img {
+    padding-top: 60px;
+    width: 600px;
+    max-width: 100%;
+}
+/* End Safety */
+/* Start Our-Team */
+.our-team {
+    padding-top: 260px;
+    padding-bottom: 70px;
+
+}
+.our-team .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:992px) {
+    .our-team .title {
+        flex-direction: column;
+    }
+    .our-team .title p {
+        padding-top: 40px;
+    }
+}
+.our-team .title p {
+    flex-basis: 45%;
+    line-height: 1.9;
+    font-weight: 500;
+}
+.our-team .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 30px;
+    padding-top: 70px;
+}
+.our-team .boxes .box .image {
+    position: relative;
+}
+.our-team .boxes .box .image::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 20px;
+}
+.our-team .boxes .box .image.one::after {
+    background-color: #DBEFFA;
+}
+.our-team .boxes .box .image.two::after {
+    background-color: #DBDEFA;
+}
+.our-team .boxes .box .image.three::after {
+    background-color: #F6DBFA;
+}
+.our-team .boxes .box .image.four::after {
+    background-color: #FADBE2;
+}
+.our-team .boxes .box .image img {
+    width: 200px;
+    height: 241px;
+    position: relative;
+    z-index: 333;
+    margin: 0 auto;
+    display: block;
+}
+.our-team .boxes .box h4 {
+    color: var(---main-color);
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 15px;
+}
+/* Start Our-Team */
+/* Start Questions */
+.questions {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.questions .container {
+    text-align: center;
+}
+.questions ul {
+    padding-top: 60px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.questions ul li {
+    padding: 25px;
+    padding-left: 20px;
+    border-bottom: 1px solid #96A0B5;
+    text-align: left;
+}
+.questions ul li div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 500;
+    color: var(---main-color);
+    opacity: 0.9;
+    font-style: italic;
+}
+.questions ul li p {
+    padding-top: 20px;
+    display: none;
+    /* height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out; */
+    color: #96A0B5;
+}
+.questions ul li p.active {
+    display: block;
+}
+.questions ul li.active{
+border-top: 2px solid var(---main-color-alt);
+background-image: linear-gradient(to bottom, #DBEFFA , var(---bg-color));
+}
+.questions ul li i.active {
+    rotate: 180deg;
+}
+/* End Questions */

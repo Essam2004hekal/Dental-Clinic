@@ -1,0 +1,128 @@
+:root {
+    ---main-color: #291770;
+    ---main-color-alt: #583FBC;
+    ---main-transition: 0.5s;
+}
+h1,
+h2,
+h3 {
+    color: var(---main-color);
+    font-style: italic;
+    font-family: "ABeeZee", Arial, sans-serif;
+}
+/* Start News */
+.news {
+    padding-top: 140px;
+}
+.news .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:992px) {
+    .news .container {
+        flex-direction: column;
+        gap: 80px;
+    }
+}
+.news .image {
+    position: relative;
+}
+.news .image img {
+    position: relative;
+    z-index: 22;
+    width: 100%;
+}
+.news .image::after {
+    position: absolute;
+    content: "";
+    height: 80%;
+    width: 50%;
+    background-color: #FADBE2;
+    top: -40px;
+    /* transform: translateY(-50%); */
+    left: -80px;
+    z-index: 0;
+    border-radius: 20px;
+}
+.news .text {
+    flex-basis: 45%;
+}
+@media (max-width:992px) {
+    .news .text {
+        text-align: center;
+    }
+}
+.news .text .main-heading h1 {
+    font-size: 43px !important;
+}
+.news .text p {
+    line-height: 1.9;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.news form {
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 80%;
+    display: flex;
+}
+@media (max-width:500px) {
+    .news form {
+        width: 100%;
+    }
+}
+.news form input {
+    border: none;
+    outline: none;
+    flex: 1;
+    border-radius: 26px;
+    caret-color: #3509e7;
+    padding-left: 10px;
+    background-color: var(---bg-color);
+}
+.news form input:focus::placeholder {
+    color: transparent;
+    transition: 0.4s;
+}
+.news form button {
+    padding: 13px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: var(---main-color);
+}
+/* End News */
+
+.blog .button-group{
+    padding-top: 40px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.blog .button-group .button{
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 5px;
+	background-color: #2917703d;
+	color: var(---main-color);
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: all 0.4s;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	font-size: 12px;
+}
+.blog .button-group .button.active{
+	background-color: var(---main-color);
+	color: white;
+}
+.blog .button-group .button:hover{
+	background-color: var(---main-color);
+	color: white;
+}

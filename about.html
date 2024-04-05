@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" href="images\logo-title.png">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <a href="landing.html"><img src="images\nav-logo.png" alt=""></a>
+                <i class="fa-solid fa-moon" id="toggleDark"></i>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <li><a class="active" href="about.html">About Us</a></li>
+                    <li><a href="patients.html">New Patient</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <button class="book" style="background-color: #291770;">Book Appointment</button>
+            </div>
+            <button onclick="myFunction()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start About -->
+    <div class="about">
+        <div class="container">
+            <div class="text">
+                <div class="main-heading">
+                    <h1>About Us</h1>
+                </div>
+                <p>
+                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                </p>
+                <a href="post.html"><button style="background-color: #291770;">Read More</button></a>
+            </div>
+            <div class="image">
+                <img src="images\patient.png" alt="">
+                <img class="doc" src="images\doc.png" alt="">
+                <img class="pattern" src="images\Pattern-landing.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Start Priority -->
+    <div class="priority">
+            <div class="container">
+                <div class="image">
+                    <img src="images\client.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="main-heading">
+                        <span>Our priority</span>
+                        <h1>Our Clients are our priority</h1>
+                    </div>
+                    <p>
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </p>
+                    <button style="background-color: #291770;">Book Appointment</button>
+                </div>
+            </div>
+    </div>
+    <!-- End Priority -->
+
+    <!-- Start Safety -->
+    <div class="safety">
+        <div class="container">
+            <div class="main-heading">
+                <span>Safety</span>
+                <h1>We put the safety first</h1>
+                <p>
+                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                </p>
+            </div>
+            <img src="images\safety.png" alt="">
+        </div>
+    </div>
+    <!-- End Safety -->
+
+    <!-- Start our-team -->
+    <div class="our-team">
+            <div class="container">
+                <div class="title">
+                    <div class="main-heading">
+                        <span>Meet our team</span>
+                        <h1>Get to know the dentalist dental Team</h1>
+                    </div>
+                    <p>
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </p>
+                </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="image one">
+                        <img src="images\doctor-1.png" alt="">
+                    </div>
+                    <h4>Dianne Russell</h4>
+                </div>
+                <div class="box">
+                    <div class="image two">
+                        <img src="images\doctor-2.png" alt="">
+                    </div>
+                    <h4>Esther Howard</h4>
+                </div>
+                <div class="box">
+                    <div class="image three">
+                        <img src="images\doctor-3.png" alt="">
+                    </div>
+                    <h4>Darrell Steward</h4>
+                </div>
+                <div class="box">
+                    <div class="image four">
+                        <img src="images\doctor-4.png" alt="">
+                    </div>
+                    <h4>Jenny Wilson</h4>
+                </div>
+            </div>
+            </div>
+    </div>
+    <!-- End our-team -->
+
+    <!-- start Questions -->
+    <div class="questions">
+        <div class="container">
+            <div class="main-heading">
+                <span>FAQ</span>
+                <h1>Get to know the dentalist dental Team</h1>
+            </div>
+
+            <ul>
+                <li><div>Is there any cost or obligation if l request an offer? <i class="fa-solid fa-chevron-down"></i></div> 
+                    <p>I see Coint being a long-term part of my  business structure. Not just for this business, but also our future endeavors.</p>
+                </li>
+                <li><div>What kind of construction services will be purchased? <i class="fa-solid fa-chevron-down"></i></div> 
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, quidem ad quasi autem placeat deserunt beatae dolor cumque consequuntur eius, saepe vel rerum.</p>
+                </li>
+                <li><div>How Do I Print My Auto Insurance ID Card? <i class="fa-solid fa-chevron-down"></i></div> 
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, quidem ad quasi autem placeat deserunt beatae dolor cumque consequuntur eius, saepe vel rerum.</p>
+                </li>
+                <li><div>How Do I Know What Deductible Applies To My Policy? <i class="fa-solid fa-chevron-down"></i></div> 
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, quidem ad quasi autem placeat deserunt beatae dolor cumque consequuntur eius, saepe vel rerum.</p>
+                </li>
+                <li><div>If I Am Moving, Will I Need To Request A New Agent? <i class="fa-solid fa-chevron-down"></i></div> 
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, quidem ad quasi autem placeat deserunt beatae dolor cumque consequuntur eius, saepe vel rerum.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Questions -->
+
+    <!-- Start Footer -->
+    <footer>
+            <div class="container first-container">
+                <div class="text-footer">
+                    <img src="images\footer-logo.png" alt="">
+                    <p>Dental Care Seattle is a top-rated local practice for cosmetic, preventative, and restorative dentistry on First Hill</p>
+                    <span>FOllow us on</span>
+                    <div class="social-links">
+                        <a href=""><i id="facebook" class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i id="twitter" class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i id="instagram" class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Dental Services</li>
+                        <li>Dentist</li>
+                        <li>Blog</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact & Information</h4>
+                    <div class="contact-footer">
+                        <img src="images\footer-1.png" alt="">
+                        <div>
+                            <span>Phone Number</span>
+                            <h5>+088 123 654 987</h5>
+                        </div>
+                    </div>
+                    <div class="contact-footer">
+                        <img src="images\footer-2.png" alt="">
+                        <div>
+                            <span>Open Hour</span>
+                            <h5> 09:00 AM - 18:00 PM</h5>
+                        </div>
+                    </div>
+                    <div class="contact-footer">
+                        <img src="images\footer-3.png" alt="">
+                        <div>
+                            <span>Clinic Address</span>
+                            <h5>35 West Dental Street California 1004</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <p>
+                    ©Dentalist. All Right Reserved | Made by:  <a target="_blank" href="https://my-app-zeta-one.vercel.app"><span class="my-site">Essam Hekal</span></a>
+                </p>
+                <div class="privacy">
+                    <a href=""> Terms of Use</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+            </div>
+    </footer>
+    <!-- End Footer -->
+
+<script src="js/landing.js"></script>
+</body>
+</html>
