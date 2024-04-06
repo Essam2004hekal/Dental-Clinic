@@ -16,27 +16,48 @@
 <body>
     
     <!-- Start Navbar -->
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg">
+        <!-- Container wrapper -->
         <div class="container">
+            <!-- Navbar brand -->
             <div style="display: flex; align-items: center; gap: 20px;">
                 <a href="index.html"><img src="images\nav-logo.png" alt=""></a>
                 <i class="fa-solid fa-moon" id="toggleDark"></i>
             </div>
-            <div class="nav-links" id="nav-links">
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="patients.html">New Patient</a></li>
-                    <li><a class="active" href="services.html">Our Services</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div>
-                <button class="book" style="background-color: #291770;">Book Appointment</button>
-            </div>
-            <button onclick="myFunction()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <!-- Toggle button -->
+            <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
             </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Right elements -->
+            <div class="right d-flex align-items-center">
+                <!-- Links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patients.html">New Patients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="active" href="services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <!-- Icon -->
+                <div class="nav-icons">
+                    <button class="book" style="background-color: #291770;">Book Appointment</button>
+                </div>
+                
+            </div>
         </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
     </nav>
     <!-- End Navbar -->
 
@@ -227,6 +248,9 @@
     </footer>
     <!-- End Footer -->
 
-    <script src="js/landing.js"></script>
+        <!-- MDB -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+        <!-- Js File -->
+        <script src="js/landing.js"></script>
 </body>
 </html>
