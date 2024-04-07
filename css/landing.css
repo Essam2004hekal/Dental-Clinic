@@ -277,7 +277,7 @@ body {
 .banner .text .info .phone i {
     color: #291770;
     font-size: 30px;
-    background-color: white;
+    background-color: transparent;
     padding: 17px;
     border-radius: 20px;
     transition: var(---main-transition);

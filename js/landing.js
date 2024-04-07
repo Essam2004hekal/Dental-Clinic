@@ -24,15 +24,24 @@ let myLoading = document.querySelector(".min-loading");
 // Dark Mood
 const toggle = document.getElementById('toggleDark');
 const changeIcon = document.querySelector('nav i')
-const darkMode = localStorage.getItem('darkMode');
+const theme = localStorage.getItem('theme');
+const target = document.body
+
+
+if (theme != null) {
+    target.classList.toggle("dark-theme");
+}
 
 toggle.onclick = function() {
-    document.body.classList.toggle("dark-theme");
-    if(document.body.classList.contains("dark-theme")) {
-        changeIcon.classList = ("fa-solid fa-sun")
-    } else {
-        changeIcon.classList = ("fa-solid fa-moon")
-    }
+    const theme = localStorage.getItem('theme');
+if (theme != null) {
+    localStorage.removeItem("theme");
+    changeIcon.classList = ("fa-solid fa-moon");
+} else {
+    localStorage.setItem("theme","dark-theme");
+    changeIcon.classList = ("fa-solid fa-sun");
+}
+    target.classList.toggle("dark-theme");
 }
 
 
